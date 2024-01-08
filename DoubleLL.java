@@ -14,7 +14,14 @@ public class DoubleLL {
             this.pre=null;
         }
     }
-
+        Node newNode = new Node(data);
+            if(head==null){
+                 head=newNode;
+                 return;
+            }
+            newNode.next=head;
+              head=newNode;
+        }
 
 
 }
