@@ -37,7 +37,22 @@ public class listL {
 //            newNode.next=null;
 //
         }
+        ///------------------------------------------insert betwee------------------------------------------------------------///
 
+    void insert_between(String data,int possition){
+
+        Node newnode= new Node(data);
+        Node current=head;
+        for (int i=0;i<possition-1;i++){
+            current=current.next;
+
+//            newnode.data =data;
+        }
+
+        newnode.next=current.next;
+        current.next=newnode;
+
+    }
 
    //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -98,7 +113,8 @@ public class listL {
             ll.treverse();
             ll.deleteFirst();
             ll.treverse();
-            ll.deleteLast();
+//            ll.deleteLast();
+            ll.insert_between("Ajmeri",2);
             ll.treverse();
 
      }
