@@ -7,8 +7,8 @@ public class circularLL {
         Node pre;
         Node(String data) {
             this.data = data;
-            this.next = null;
-            this.pre=null;
+            this.next = head;
+            this.pre=next-1;
         }
     }
     void insertFirst(String data){
